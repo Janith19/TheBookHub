@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Categories - The Book Hub</title>
+		<link rel="stylesheet" type="text/css" href="css/categories.css">
+		<link rel="stylesheet" type="text/css" href="css/Home.css">
+		<link rel="stylesheet" type="text/css" href="css/Login.css">
+	</head>
+
+	<body>
+		  <header class="header">
+	    <a href="#" class="logo"><img src="Images/Logo/Logo gray.png"> </a>
+	    <nav class="nav-items">
+	     <ul>
+	          <li><a href="Home.html">Home</a></li>
+	          <li><a href="categories.html">Categories</a></li>
+	          <li><a href="cart.html">Cart</a></li>
+	          <li><a href="aboutus.html">About Us</a></li>
+			  <li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="Register.html"> Sign Up </a></button></li>
+	        </ul>
+	    </nav>
+	  </header>
+	  	<main>
+			<div id="id01" class="modal">
+
+      </div>
+			<section class="categories">
+				<div class="container">
+					<h2>Select Category</h2>
+					<ul class="category-list">
+						<li><a href="#" onclick="filterBooks('All'); return false;">All</a></li>
+						<li><a href="#" onclick="filterBooks('Biography'); return false;">Biography</a></li>
+						<li><a href="#" onclick="filterBooks('Childrens'); return false;">Children's Books</a></li>
+						<li><a href="#" onclick="filterBooks('Education'); return false;">Education</a></li>
+						<li><a href="#" onclick="filterBooks('Novels'); return false;">Novels</a></li>
+						<li><a href="#" onclick="filterBooks('poetry'); return false;">Poetry</a></li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="book-list">
+				<div class="container">
+					<h2>Book Collection</h2>
+					<div class="books">
+						<div class="book" data-category="Biography">
+								<img src="Images/Books/biography/A Man of Iron, The Turbulent Life and Improbable Presidency of Grover Cleveland Hardcover.jpg" alt="Book Cover" height="200px" width="150" >
+								<h3>A Man of iron</h3>
+								<p>Troy Senik</p>
+								<p>Price: $10.99</p>
+								<form action="addtocart.php" method="POST">
+									<input type="hidden" name="book_id" value="1">
+									<button class="addtocart" data-id="1">Add to Cart</button>
+								</form>
+						  </div>
+						
+						  <div class="book" data-category="Biography">
+							<img src="Images/Books/biography/American Prometheus The Triumph and Tragedy of J. Robert Oppenheimer.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>American Promethus</h3>
+							<p>Kai Bird, Martin J. Sherwin</p>
+							<p>Price: $10.00</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+						</div>
+	
+						<div class="book" data-category="Biography">
+							<img src="Images/Books/biography/Biography of a Phantoms A Robert Johnson Blues Odyssey.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Biography of a Phantom</h3>
+							<p>Robert McCormic</p>
+							<p>Price: $14.00</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+						</div>
+	
+						<div class="book" data-category="Biography">
+							<img src="Images/Books/biography/Jim Henson The Biography.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Jim Henson</h3>
+							<p>Jay Jones</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+						</div>
+	
+						<div class="book" data-category="Biography">
+							<img src="Images/Books/biography/My Travels with Mrs. Kennedy.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>My Travels with Mrs kennedy</h3>
+							<p>Clint Hill</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+						</div>
+	
+						<div class="book" data-category="Biography">
+							<img src="Images/Books/biography/No Time Like the Future An Optimist Considers Mortality.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Accidental President</h3>
+							<p>A. J. Baime</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Biography">
+								<img src="Images/Books/biography/Taylor Swift A Little Golden Book Biography.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Taylor Swift: A Little Golden</h3>
+							<p>By  Wendy Loggia</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Biography">
+								<img src="Images/Books/biography/The Accidental President Harry S. Truman and the Four Months That Changed the World.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Extraordinary Life of an Ordinary Man</h3>
+							<p>By PAUL NEWMAN</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Biography">
+								<img src="Images/Books/biography/The Extraordinary Life of an Ordinary Man.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Theodore Roosevelt: An Autobiography</h3>
+							<p>By Theodore Roosevelt</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Biography">
+								<img src="Images/Books/biography/Theodore Roosevelt  An Autobiography.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>No Time Like the Future</h3>
+							<p>By Michael J. Fox</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/365 Bedtime Stories and Rhymes Hardcover.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>365 Bedtime Stories and Rhymes</h3>
+							<p>By Cottage Door Press</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/Clifford's Good Deeds (Classic Storybook) Paperback.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Clifford's Good Deeds</h3>
+							<p>Norman Bridwell</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" dataClifford's Good Deeds-category="Childrens">
+								<img src="Images/Books/Children/I Love You to the Moon and Back Board book.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>I Love You to the Moon and Back</h3>
+							<p>By Amelia Hepworth</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/Ricky, the Rock That Couldn't Roll (You Rock Group) Hardcover – Picture Book, May 18, 2018.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Ricky, the Rock That Couldn't Roll</h3>
+							<p>By Mr. Jay</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/The Story of Ferdinand Paperback – Picture Book, March 31, 2011.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Story of Ferdinand</h3>
+							<p>By Munro Leaf</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/The Umbrella Hardcover.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Umbrella</h3>
+							<p>By Beth Ferry</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/The Unexpected Light of Thomas Alva Edison (Turnabout Tales) Hardcover.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Unexpected Light of Thomas Alva Edison</h3>
+							<p>By Raymond Arroyo</p>
+							<p>Price: $5.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/The Wonderful Things You Will Be.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Wonderful Things You Will Be</h3>
+							<p>By Emily Winfield Martin</p>
+							<p>Price: $8.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/The Wonky Donkey Paperback – Picture Book, May 1, 2010.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Wonky Donkey</h3>
+							<p>By Craig Smith</p>
+							<p>Price: $9.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Childrens">
+								<img src="Images/Books/Children/Timothy the Tireless Paperback.jpg" alt="Book Cover" height="200px" width="150">
+							<h3> Timothy the Tireless</h3>
+							<p>By Kekoaakahekili Seme </p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							 </div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Basic Physics A Self Teaching Guide.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Basic Physics: A Self-Teaching Guide</h3>
+							<p>By Karl F. Khun</p>
+							<p>Price: $15.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Calculus.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Calculus - A Complete Introduction: Teach Yourself</h3>
+							<p>By Hugh Neil</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Cook ICT.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Cook ICT</h3>
+							<p>By Jenny Myers</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/educated.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Educated/h3>
+							<p>By Tara Westover</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Essential English Grammar.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Essential English Grammar</h3>
+							<p>By Raymond Murphy</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							  <div class="book" data-category="Education">
+								<img src="Images/Books/Education/How to Write a 5-Paragraph Essay Step-by-Step Step-by-Step.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>How to Write a 5-Paragraph Essay Step-by-Step</h3>
+							<p>By  Step-by-Step</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Intermediate English Grammar.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Intermediate English Grammar</h3>
+							<p>By Raymond Murphy</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Oxford Modern English Grammar.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Oxford Modern English Grammar</h3>
+							<p>By Bas Aarts</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Physical Geography A Self-Teaching Guide.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Physical Geography A Self-Teaching Guide</h3>
+							<p>By Michael Craghan</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Education">
+								<img src="Images/Books/Education/Statistics Without Tears A Primer for Non-Mathematicians Classic Edition.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Statistics Without Tears A Primer for Non-Mathematicians</h3>
+							<p>By Derek Rowntree</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							 </div>
+	
+							  <div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/Adelaide.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Adelaide: A Novel</h3>
+							<p>By Genevieve Wheeler</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/All the Light We Cannot See.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>All the Light We Cannot See</h3>
+							<p>By  Anthony Doerr</p>
+							<p>Price: $13.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/In Five Years.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>In Five Years</h3>
+							<p>By Rebecca Serle</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/It Ends with Us A Novel.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>It Ends with Us</h3>
+							<p>By Colleen Hoove</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/The Giver of Stars.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Giver of Stars</h3>
+							<p>By Jojo Moyes</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							 </div>
+	
+							  <div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/The Last Thing He Told Me.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Last Thing He Told Me</h3>
+							<p>By Laura Dave</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/The Nightingale.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Nightingale</h3>
+							<p>By Kristin Hannah</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/Then She Was Gone.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Then She Was Gone</h3>
+							<p>By Lisa Jewell</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/Things We Never Got Over.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Things We Never Got Over</h3>
+							<p>By Lucy Score</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="Novels">
+								<img src="Images/Books/Novels/Weyward.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Weyward</h3>
+							<p>By Emilia Hart</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							 </div>
+							 <!--
+	
+							  <div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/150 Most Famous Poems Emily Dickinson, Robert Frost, William Shakespeare, Edgar Allan Poe, Walt Whitman and many more.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>The Hunger Games</h3>
+							<p>By Suzanne Collins</p>
+							<p>Price: $19.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>-->
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/Clarity & Connection (Yung Pueblo).jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Clarity & Connection</h3>
+							<p>By Yung Pueblo</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/Dear Self.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Dear Self</h3>
+							<p>By Patience Tamarra</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/Getting Over You.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Getting Over You</h3>
+							<p>By Leslie B</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/healing for no one but me Paperback.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>healing for no one but me </h3>
+							<p>By Jennae Cecelia</p>
+							<p>Price: $10.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							 </div>
+	
+							  <div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/Milk and Honey.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Milk and Honey</h3>
+							<p>By Rupi Kaur</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/Pillow Thoughts.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>Pillow Thoughts </h3>
+							<p>By Courtney Peppernell</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/SHE IS THE SUN A Collection of Poetry.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>SHE IS THE SUN</h3>
+							<p>By  Niccole Salm</p>
+							<p>Price: $11.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/the things I didn't say in therapy Paperback.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>the things I didn't say in therapy</h3>
+							<p>By Logan Duane</p>
+							<p>Price: $12.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+	
+							<div class="book" data-category="poetry">
+								<img src="Images/Books/poetry/THINGS WE DON’T TALK ABOUT Paperback.jpg" alt="Book Cover" height="200px" width="150">
+							<h3>THINGS WE DON’T TALK ABOUT </h3>
+							<p>By Pandora Owl</p>
+							<p>Price: $13.99</p>
+							<form action="addtocart.php" method="POST">
+								<input type="hidden" name="book_id" value="1">
+								<button class="addtocart" data-id="1">Add to Cart</button>
+							  </form>
+							</div>
+						</section>
+						
+		</main>
+		<footer class="footer">
+		<div>
+			<h1>About Us</h1>
+				  <p>We are a passionate team of book lovers who believe that reading is the key to a better world. Our mission is to make quality books accessible to everyone, no matter where they are in the world. <br><br>
+				  At Online Bookstore, we offer a wide selection of books for all ages and interests, including fiction, non-fiction, children's books, and bestsellers. We are committed to providing our customers with the best possible shopping experience, with fast and reliable delivery, easy returns, and excellent customer service.<br><br>
+				  If you have any questions or feedback, please do not hesitate to contact us. We are always happy to hear from our customers!</p>
+				  <br>
+			<h2>Contact Us</h2>
+					<ul>
+					  <li><a href="mailto:thebookhub@gmail.com"><img src="Images/Icons/Email.png"></a></li>
+					  <li><a href="The Book Hub/facebook.com"><img src="Images/Icons/Facebook.png"></a></li>
+					  <li><a href="The Book Hub/instagram.com"><img src="Images/Icons/Instagram.png"></a></li>
+					  <li><a href="tei: 1234567890"><img src="Images/Icons/Whatsapp.png"></a></li>
+					</ul>
+		   </div>
+		</footer>
+		  
+		<script type="text/javascript" src="js/Categories.js"></script>
+	</body>
+</html>

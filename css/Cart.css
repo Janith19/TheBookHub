@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+table {
+  border-collapse: collapse;
+  margin: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.checkout {
+  margin: 20px;
+  text-align: right;
+}
+
+.checkout h2 {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.checkout button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.checkout button:hover {
+  background-color: #555;
+}

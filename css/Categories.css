@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	color: #333;
+}
+
+/* Style for the category list */
+
+.container {
+    margin-left: 100px;
+}
+.categories {
+	margin-top: 50px;
+    /*margin-left: 100px;*/
+}
+
+.categories h2 {
+	margin-bottom: 20px;
+}
+
+.category-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category-list li {
+	margin-right: 20px;
+}
+
+.category-list a {
+	display: block;
+	padding: 10px;
+	background-color: #ddd;
+	color: #333;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s;
+}
+
+.category-list a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+#about {
+	padding: 20px;
+    padding-top: 50px;
+}
+
+#about h2 {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+	
+/*ssss*/
+
+
+/* Style for the book list */
+.book-list {
+	margin-top: 50px;
+}
+
+.book-list h2 {
+	margin-bottom: 20px;
+}
+
+.books {
+	display: flex;
+	flex-wrap: wrap;
+    /*margin-left: 100px;*/
+}
+
+.book {
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 10px;
+	width: calc(20% - 20px);
+	height: fit-content;
+    align-items: center;
+}
+.book p {
+	color: black;
+}
+
+.book img {
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book h3 {
+	margin-top: 0;
+    text-align: center;
+}
+
+.book p {
+	margin-top: 0;
+    text-align: center;
+}
+
+.book form {
+	margin-top: 0;
+    text-align: center;
+}
+
+
+
+
+
+
